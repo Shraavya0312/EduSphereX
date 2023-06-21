@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>EduSocialSphereX - Cart</title>
+        <link href="../style2.css" rel="stylesheet">
+    </head>
+
+    <body style="background-color: #000;"> 
+        <div id="navigation" style="display: flex; align-items: center;">
+            <div>
+                <img src="../assets/Back.png" style="width: 100px; height: 100px;margin-right: 150px;" onclick="window.history.back()"/>
+            </div>
+            <div style="margin-left: 360px;">
+                <img src="../assets/logo-w.png" style="width: 200px; height: 120px;margin-right: 150px;"/>
+            </div>
+        </div> 
+      
+        <center>
+            <div class="cart" id="cart1">
+                <img src="../photos/htb.jpeg" style="height: 150px; width: 100px;">
+                <div style="margin-left: 40px; text-align: left;">
+                    <h3 style="font-family: 'Trebuchet MS', sans-serif; font-size: 20px; font-weight: bold;">History TB</h3>
+                    <h3 style="font-family: 'Trebuchet MS', sans-serif; font-size: 15px;">200₹</h3>
+                    <button style="font-size: 13px; width: 100px;" id="delete1" class="but3">Add to cart</button>
+                </div>
+            </div>
+
+            <div class="cart" id="cart2">
+                <img src="../photos/tb.jpg" style="height: 150px; width: 100px;">
+                <div style="margin-left: 40px; text-align: left;">
+                    <h3 style="font-family: 'Trebuchet MS', sans-serif; font-size: 20px; font-weight: bold;">English TB</h3>
+                    <h3 style="font-family: 'Trebuchet MS', sans-serif; font-size: 15px;">250₹</h3>
+                    <button style="font-size: 13px; width: 100px;" id="delete2" class="but3">Add to cart</button>
+                </div>
+            </div>
+            <br>
+            <button style=" width:300px; height: 40px; font-weight: bold; font-size: 18px; background-color: #706A6F; color: black; border-radius: 0.1cm; border: 0px;" onclick="window.location.href='./cart.html'">Go to Cart</button>
+        </center>
+
+
+        <script>
+            var d1 = document.getElementById("delete1");
+            var d2 = document.getElementById("delete2");
+            var c1 = document.getElementById("cart1");
+            var c2 = document.getElementById("cart2");
+            d1.addEventListener("click", function(){
+                alert("Item added to Cart!")
+                c1.style.display = "none"
+            })
+            d2.addEventListener("click", function(){
+                alert("Item added to Cart!")
+                c2.style.display = "none"
+            })
+        </script>
+
+</html>
